@@ -23,9 +23,9 @@ body {
   /* 页头样式 */
   header {
     background-color: #ffffff;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);/* 页头的阴影 */
     overflow: hidden;
-    padding: 20px 0;
+    padding: 20px 0;/* 页头的上下内边距 */
   }
   
   header .container {
@@ -41,7 +41,7 @@ body {
     color: #ff7f50;
     font-size: 24px;
     font-weight: bold;
-    order: 1;
+    order: 0;
     text-decoration: none;
   }
   
@@ -85,11 +85,11 @@ body {
     background-color: #000000;
     color: #ffffff;
     font-size: 14px;
-    padding: 20px;
+    padding: 5px;/* 页脚的上下内边距 */
     text-align: center;
   }
   
   footer .container {
-    padding: 20px;
+    padding: 5px;/* 页脚的上下内边距 */
   }
   
