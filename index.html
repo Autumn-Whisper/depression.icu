@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页</title>
+  <style>
+    /* 在此处添加CSS样式 */
+    body {
+      font-family: Arial, sans-serif;
+	  background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      display: flex;
+      justify-content: space-around;
+      background-color: #ffffff;
+      padding: 20px;
+      font-size: 18px;
+    }
+.card {
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  color: #333333;
+  padding: 20px;
+}
+	  
+.card h2 {
+  color: #ff7f50; /* 将标题颜色设置为橙色 */
+}
+    .footer {
+      background-color: #000000;
+      padding: 20px;
+      text-align: center;
+	  color: #ffffff;
+      font-size: 14px;
+    }
+    .container {
+      padding: 20px;
+    }
+header {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  overflow: hidden; /* 避免内容溢出圆角 */
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff7f50;
+  text-decoration: none;
+  order: 1;
+}
+
+header nav {
+  order: 2;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li:first-child {
+  margin-left: 0;
+}
+
+header nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff; /* 将背景颜色设置为白色 */
+  color: #ff7f50; /* 将文字颜色设置为橙色 */
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #ff7f50; /* 将边框颜色设置为橙色 */
+  transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: #ff7f50; /* 在悬停时将背景颜色设置为橙色 */
+  color: #ffffff; /* 在悬停时将文字颜色设置为白色 */
+}
+
+
+
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <a class="logo" href="#">depression.icu</a>
+    <nav>
+      <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">项目进度</a></li>
+        <li><a href="#">数据集</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">联系我们</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <main class="container">
+	  <div class="card">
+	      <section>
+      <h2>项目简介</h2>
+      <p>depression.icu是一款专为心情低落的人们打造的开源AI聊天工具，旨在通过与用户的深度互动，为他们提供情感支持和陪伴。该项目采用了大语言模型和情感分析技术，实现了对用户情感状态的准确把握，从而根据用户的需求提供个性化的关怀与建议。</p>
+    </section>
+		  </div>
+<p></p>
+<div class="card">
+    <section>
+      <h2>项目背景</h2>
+	  <p>在快速发展的现代社会中，人们面临着越来越多的压力和挑战。心情低落、焦虑和抑郁等情绪问题逐渐成为了许多人的困扰。然而，由于种种原因，许多人在需要关爱和支持时却无法找到合适的倾诉对象。因此，我们开发了这款AI陪伴聊天工具，希望建立一个能够提供情感支持的虚拟空间，让心情低落的人们在需要时能够找到陪伴和安慰。</p>
+
+    </section>
+ </div>
+	  <p></p>
+<div class="card">
+    <section>
+      <h2>项目愿景</h2>
+      <p>我们致力于打造一个温暖人心的人工智能陪伴伙伴，让心情低落的人们在生活中不再孤单。我们希望通过先进的技术手段，使得AI不仅能与人类进行有意义的对话，还能根据用户的情感状态提供有效的心理支持，为他们的生活带来积极的改变。</p>
+      <p>&nbsp;</p>
+</section>
+ </div>
+<p></p>
+<div class="card">
+    <section>
+      <h2>项目特点</h2>
+<p>1. 开源项目：本项目是一个基于ChatGLM（类ChatGPT模型）的开源项目，鼓励社区参与和贡献。开发者们可以自由地获取和修改代码，共同为心情低落的人们提供更好的陪伴体验。</p>
+
+<p>2. 引入情感分析：我们引入了情感分析功能，使AI能够识别用户输入内容的情感状态，为用户提供更为贴切的关爱和支持。</p>
+
+<p>3. 持续优化：我们将不断收集反馈，优化AI的性能和服务质量，以满足不同用户的需求。同时，我们鼓励社区成员积极参与项目的优化和完善，共同提升AI陪伴的体验。</p>
+
+<p>4. 数据集开源：在保证用户隐私的前提下，我们会对数据集进行脱敏处理，并将其开源。这将有助于研究者和开发者更好地了解用户需求，为心情低落的人群提供更优质的服务。</p>
+
+<p>5. 安全与隐私：我们将严格遵守相关法律法规。在开源数据集时，我们会对数据进行严格的脱敏处理，处理完成后原始数据会被删除，确保隐私得到充分保护。</p>
+
+</section>
+ </div>
+
+		  
+  </main>
+  <footer class="footer">
+	<p>联系我们：yeluo@hyfmwzs.com</p>
+    <p>版权所有 &copy; 2023 未遮山工作室</p>
+</footer>
+</body>
+</html>
