@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     var headerElement = document.getElementById('header');
 
-    fetch('./div/header/desktop_header.html')
+    var path = (window.location.pathname.includes("/page/")) ? "../div/header/desktop_header.html" : "div/header/desktop_header.html";
+
+    fetch(path)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');

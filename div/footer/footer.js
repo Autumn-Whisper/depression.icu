@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var headerElement = document.getElementById('footer');
+    var footerElement = document.getElementById('footer');
 
-    fetch('./div/footer/footer.html')
+    var path = (window.location.pathname.includes("/page/")) ? "../div/footer/footer.html" : "div/footer/footer.html";
+
+    fetch(path)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -9,10 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
             return response.text();
         })
         .then(html => {
-            headerElement.innerHTML = html;
+            footerElement.innerHTML = html;
         })
         .catch(error => {
             console.error('Error fetching footer:', error);
-            headerElement.innerHTML = '<p>加载页脚时出错。</p>';
+            footerElement.innerHTML = '<p>加载页脚时出错。</p>';
         });
 });
