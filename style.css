@@ -46,7 +46,7 @@ body {
 .timeline-event {
     position: relative;
     padding: 20px 0;
-    min-height: 150px;
+    clear: both;
 }
 
 .timeline-content {
@@ -59,6 +59,8 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    position: relative;
+    float: left; 
     z-index: 1;
 }
 
