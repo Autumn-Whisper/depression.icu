@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     var footerElement = document.getElementById('footer');
 
-    fetch('div/footer/footer.html')
+    fetch('depression.icu/div/footer/footer.html')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
