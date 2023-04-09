@@ -32,7 +32,7 @@ body {
     padding: 50px 0;
 }
 
-.timeline-event:before {
+.timeline-event:nth-child(odd)::before {
   content: "";
   display: block;
   width: 10px;
@@ -40,11 +40,26 @@ body {
   background-color: #333;
   border-radius: 50%;
   position: absolute;
-  left: -5px; /* 圆点的位置调整为事件框左侧 */
+  right: -5px;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1; /* 圆点覆盖在事件框之上 */
+  z-index: 1;
 }
+
+.timeline-event:nth-child(even)::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #333;
+  border-radius: 50%;
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
 
 .timeline::after {
     content: '';
