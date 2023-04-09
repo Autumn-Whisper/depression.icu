@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     var headerElement = document.getElementById('header');
 
-    fetch('depression.icu/div/header/desktop_header.html')
+    fetch('https://depression.icu/div/header/desktop_header.html')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
