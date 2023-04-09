@@ -75,9 +75,9 @@ body {
 }
 
 .timeline-event:nth-child(odd) .timeline-content {
-    left: 50%;
+  margin-left: 0; /* 将这行从 'left: 50%;' 改为 'margin-left: 0;' */
 }
 
 .timeline-event:nth-child(even) .timeline-content {
-    left: 0;
+  margin-right: 50%; /* 添加这行 */
 }
