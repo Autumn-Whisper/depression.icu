@@ -46,6 +46,7 @@ body {
 .timeline-event {
     position: relative;
     padding: 20px 0;
+    min-height: 150px;
 }
 
 .timeline-content {
