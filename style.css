@@ -23,3 +23,60 @@ body {
   body .card h2 {
     color: #ff7f50;
   }
+
+  /*时间轴样式*/
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: #333;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-event {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-content {
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    color: #333333;
+    padding: 20px;
+    width: 50%;
+    position: absolute;
+}
+
+.timeline-content h3 {
+    color: #ff7f50;
+    margin-top: 0;
+}
+
+.timeline-content::before {
+    content: attr(data-date);
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+.timeline-event:nth-child(odd) .timeline-content {
+    left: 50%;
+}
+
+.timeline-event:nth-child(even) .timeline-content {
+    left: 0;
+}
