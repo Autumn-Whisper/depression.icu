@@ -46,7 +46,7 @@ body {
 .timeline-event {
     position: relative;
     padding: 20px 0;
-    clear: both;
+    min-height: 150px;
 }
 
 .timeline-content {
@@ -79,11 +79,10 @@ body {
     margin-bottom: 20px;
 }
 
-.timeline-event:nth-child(odd) .timeline-content {
-  margin-left: 0; /* 将这行从 'left: 50%;' 改为 'margin-left: 0;' */
+.timeline-event:nth-child(odd) {
+  margin-right: 50%;
 }
 
-.timeline-event:nth-child(even) .timeline-content {
-  margin-left: 0;
-  margin-right: 50%;
+.timeline-event:nth-child(even) {
+  margin-left: 50%;
 }
