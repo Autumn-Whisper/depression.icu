@@ -57,6 +57,9 @@ body {
     padding: 20px;
     width: 50%;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
 
 .timeline-content h3 {
@@ -79,5 +82,6 @@ body {
 }
 
 .timeline-event:nth-child(even) .timeline-content {
-  margin-right: 50%; /* 添加这行 */
+  margin-left: 0;
+  margin-right: 50%;
 }
