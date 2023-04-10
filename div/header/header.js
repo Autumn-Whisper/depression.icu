@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var headerElement = document.getElementById('header');
 
     fetch('div/header/desktop_header.html')
