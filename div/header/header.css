@@ -162,7 +162,7 @@ header .menu ul li a:hover {
   color: #ffffff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   header .menu-toggle {
     display: block;
   }
