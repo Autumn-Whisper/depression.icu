@@ -26,6 +26,23 @@ header .menu-toggle {
   display: none;
   font-size: 18px;
   order: 1;
+  border: 1px solid #ff7f50;
+  border-radius: 5px;
+  color: #ff7f50;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header .menu-toggle:hover {
+  background-color: #ff7f50;
+  color: #ffffff;
+}
+
+header .menu-toggle-text {
+  display: inline-block;
+  margin-right: 5px;
 }
 
 header .menu {
@@ -70,6 +87,16 @@ header .menu ul li a:hover {
 
   header .menu {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  header .menu.show {
+    display: block;
   }
 
   header .menu ul {
@@ -87,8 +114,4 @@ html,
 body {
   margin: 0;
   padding: 0;
-}
-
-header .menu.show {
-  display: block;
 }
