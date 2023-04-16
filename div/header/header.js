@@ -25,5 +25,11 @@ document.addEventListener('DOMContentLoaded', function () {
     menuToggle.addEventListener('click', function () {
       menu.classList.toggle('show');
     });
+  
+    document.addEventListener('click', function (event) {
+      if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+        menu.classList.remove('show');
+      }
+    });
   }
   

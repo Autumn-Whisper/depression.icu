@@ -80,6 +80,88 @@ header .menu ul li a:hover {
   color: #ffffff;
 }
 
+header {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+header .container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+header .logo {
+  color: #ff7f50;
+  font-size: 24px;
+  font-weight: bold;
+  order: 0;
+  text-decoration: none;
+}
+
+header .menu-toggle {
+  display: none;
+  font-size: 18px;
+  order: 1;
+  border: 1px solid #ff7f50;
+  border-radius: 5px;
+  color: #ff7f50;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header .menu-toggle:hover {
+  background-color: #ff7f50;
+  color: #ffffff;
+}
+
+header .menu-toggle-text {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+header .menu {
+  order: 2;
+}
+
+header .menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header .menu ul li {
+  margin-left: 20px;
+}
+
+header .menu ul li:first-child {
+  margin-left: 0;
+}
+
+header .menu ul li a {
+  background-color: #ffffff;
+  border: 1px solid #ff7f50;
+  border-radius: 5px;
+  color: #ff7f50;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+header .menu ul li a:hover {
+  background-color: #ff7f50;
+  color: #ffffff;
+}
+
 @media screen and (max-width: 768px) {
   header .menu-toggle {
     display: block;
@@ -87,21 +169,26 @@ header .menu ul li a:hover {
 
   header .menu {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
     background-color: #ffffff;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
   }
 
   header .menu.show {
     display: block;
+    left: 0;
   }
 
   header .menu ul {
     display: block;
     flex-direction: column;
+    height: 100%;
+    justify-content: center;
   }
 
   header .menu ul li {
