@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+      <loc>https://depression.icu/</loc>
+      <lastmod>2023-04-17</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>https://depression.icu/404.html</loc>
+      <lastmod>2023-04-17</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.6</priority>
+   </url>
+
+   <url>
+      <loc>https://depression.icu/page/about.html</loc>
+      <lastmod>2023-04-17</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://depression.icu/page/contact.html</loc>
+      <lastmod>2023-04-17</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://depression.icu/page/data.html</loc>
+      <lastmod>2023-04-17</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://depression.icu/page/progress.html</loc>
+      <lastmod>2023-04-17</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+</urlset>

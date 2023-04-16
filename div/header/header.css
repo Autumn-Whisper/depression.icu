@@ -193,7 +193,8 @@ header .menu ul li a:hover {
   }
 
   header .menu ul li {
-    margin-left: 0;
+    padding: 10px 0;
+    margin: 10px 0;
     text-align: center;
   }
 }
