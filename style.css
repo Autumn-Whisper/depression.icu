@@ -17,10 +17,24 @@ body .card {
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
   color: #333333;
   padding: 20px;
-  margin: 30px 30px 30px 30px;
-  max-width: 900px;
+  margin: 30px auto;
+  max-width: 800;
+  line-height: 1.5;
 }
+
+body .card h1 {
+  color: #ff7f50;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
 
 body .card h2 {
   color: #ff7f50;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+body .p {
+  text-indent: 2em;
 }
